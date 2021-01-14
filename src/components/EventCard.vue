@@ -23,10 +23,14 @@ export default {
 <style scoped>
 .event-link{
   text-decoration: none;
+  display: block;
+  width: 100%;
+  padding: 0 10px;
 }
 .event-card {
   padding: 20px;
-  width: 350px;
+  display: block;
+  width: 100%;
   cursor: pointer;
   color: #ffffff;
   border-radius: 3px;

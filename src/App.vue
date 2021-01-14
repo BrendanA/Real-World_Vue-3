@@ -20,6 +20,19 @@
   color: #2c3e50;
 }
 
+#app *{
+  box-sizing: border-box;
+}
+
+a {
+  color: #2c3e50;
+  text-decoration: none;
+}
+
+a:hover {
+  color:#42b983;
+}
+
 h1 {
   font-size: 2.5em;
   color: #2c3e50;
