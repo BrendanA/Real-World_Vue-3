@@ -15,6 +15,8 @@
         class="button"
         :to="{ name: 'EventList', query: {page: a = a++} }"
         rel="prev"
+        
+        :class="{ active: a == page, 'text-danger': hasError }"
         > {{ a }}</router-link>
         </div>
 
@@ -69,7 +71,8 @@ export default {
 };
 </script>
 
-<style scoped>
+
+<style  scoped>
 .event-list {
   display: flex;
   flex-direction: column;
@@ -102,7 +105,10 @@ export default {
   opacity: .9;
 }
 
-.pagination .button:hover{
+
+.button.active,
+.button:hover{
+  transform: scale(1.05);
   opacity: 1;
 }
 
