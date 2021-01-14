@@ -1,11 +1,11 @@
 <template>
   <div id="app">
     <div class="banner">
-    <h2>Real World Vue3</h2>
-    <div id="nav">
-      <router-link :to="{ name: 'EventList' }">Events</router-link> |
-      <router-link :to="{ name: 'About' }">>About</router-link>
-    </div>
+      <h2>Real World Vue3</h2>
+      <div id="nav">
+        <router-link :to="{ name: 'EventList' }">Events</router-link> |
+        <router-link :to="{ name: 'About' }">About</router-link>
+      </div>
     </div>
     <router-view />
   </div>
@@ -35,7 +35,7 @@ h1 {
   padding: 30px;
 }
 
-.banner > *{
+.banner > * {
   padding: 0;
   margin: 0;
 }
